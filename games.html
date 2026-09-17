@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="GrffnL's personal game library: six atmospheric games worth returning to.">
+  <link rel="icon" type="image/svg+xml" href="assets/crescent-favicon.svg">
+  <title>Games // GrffnL</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="games-page.css">
+</head>
+<body class="games-page">
+  <div class="noise"></div>
+  <div class="mecha-grid" aria-hidden="true"><span class="grid-scanline"></span><span class="grid-cross cross-one"></span><span class="grid-cross cross-two"></span><span class="grid-cross cross-three"></span></div>
+  <audio id="gameAudio" loop preload="auto" src="assets/game-theme.mp3"></audio>
+  <nav class="navbar games-nav fixed-top" id="siteNav">
+    <div class="container">
+      <a class="navbar-brand" href="index.html"><span class="brand-emblem" aria-hidden="true"></span><span class="brand-slash">/</span>GrffnL</a>
+      <div class="nav-actions"><button class="audio-toggle game-audio-toggle is-on" id="gameAudioToggle" type="button" aria-label="Toggle game music" aria-pressed="true"><i class="bi bi-volume-up-fill"></i><span>audio</span></button><button class="navbar-toggler menu-toggle" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-label="Open navigation" aria-controls="navMenu" aria-expanded="false"><span></span><span></span><span></span></button></div>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-4">
+          <li class="nav-item"><a class="nav-link" href="index.html">home</a></li>
+          <li class="nav-item"><a class="nav-link" href="anime.html">anime</a></li>
+          <li class="nav-item"><a class="nav-link active" href="games.html">games</a></li>
+          <li class="nav-item"><a class="nav-link" href="blog.html">blog</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#about">about</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <section class="games-hero container">
+      <div class="games-hero-copy reveal">
+        <p class="kicker"><span class="pulse"></span> 02 / PERSONAL GAME LIBRARY</p>
+        <h1>Worlds worth<br><em>staying in.</em></h1>
+        <p>Seven games with the kind of atmosphere that follows you long after the screen goes dark.</p>
+      </div>
+      <div class="library-stamp reveal reveal-delay-1"><span>CURATED</span><strong>07</strong><span>FAVORITES</span></div>
+    </section>
+
+    <section class="library-section">
+      <div class="container">
+        <div class="library-toolbar reveal"><span>LIBRARY / 07 TITLES</span><span><i class="bi bi-grid-3x3-gap-fill"></i> ALL MOODS</span></div>
+        <div class="game-library">
+          <article class="library-card reveal">
+            <a class="game-media" href="game-detail.html?game=persona-3-reload"><img class="game-cover" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2161700/library_600x900_2x.jpg" alt="Persona 3 Reload cover" onerror="this.onerror=null;this.src='https://cdn.cloudflare.steamstatic.com/steam/apps/2161700/library_600x900.jpg'"><span class="game-number">01</span><span class="media-score">9.4</span></a>
+            <div class="game-details"><div class="game-title-row"><div><p class="game-type">JRPG / SOCIAL SIM</p><h2>Persona 3 Reload</h2></div><span class="game-score">9.4</span></div><p class="game-description">A stylish midnight hour, a tower that reaches the sky, and friendships that make an impossible year feel human.</p><div class="game-tags"><span>story rich</span><span>turn-based</span><span>melancholic</span></div><a href="https://store.steampowered.com/app/2161700/Persona_3_Reload/" target="_blank" rel="noreferrer">view on steam <i class="bi bi-arrow-up-right"></i></a></div>
+          </article>
+          <article class="library-card reveal reveal-delay-1">
+            <a class="game-media arknights-media" href="game-detail.html?game=arknights"><img class="game-cover" src="https://webusstatic.yo-star.com/web-cms-test/upload/content/2026/08/17/1xyKqHLR.jpg?x-oss-process=image/resize,p_50" alt="Arknights official artwork"><span class="game-number">02</span><span class="media-score">9.1</span></a>
+            <div class="game-details"><div class="game-title-row"><div><p class="game-type">TACTICAL RPG / ANIME</p><h2>Arknights</h2></div><span class="game-score">9.1</span></div><p class="game-description">Operators, dystopian cities, and a soundtrack that turns every tactical decision into a little piece of theatre.</p><div class="game-tags"><span>strategy</span><span>tower defense</span><span>operators</span></div><a href="https://www.arknights.global/" target="_blank" rel="noreferrer">visit official site <i class="bi bi-arrow-up-right"></i></a></div>
+          </article>
+          <article class="library-card reveal">
+            <a class="game-media silent-hill-media" href="game-detail.html?game=silent-hill-2-remake"><img class="game-cover" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2124490/library_600x900_2x.jpg" alt="Silent Hill 2 Remake cover"><span class="game-number">03</span><span class="media-score">9.7</span></a>
+            <div class="game-details"><div class="game-title-row"><div><p class="game-type">SURVIVAL HORROR / REMAKE</p><h2>Silent Hill 2 Remake</h2></div><span class="game-score">9.7</span></div><p class="game-description">Fog, guilt, rust, and the strange intimacy of a town that always seems to know exactly why you came.</p><div class="game-tags"><span>psychological</span><span>horror</span><span>fogbound</span></div><a href="https://store.steampowered.com/app/2124490/SILENT_HILL_2/" target="_blank" rel="noreferrer">view on steam <i class="bi bi-arrow-up-right"></i></a></div>
+          </article>
+          <article class="library-card reveal reveal-delay-1">
+            <a class="game-media witch-media" href="game-detail.html?game=magical-girl-witch-trials"><img class="game-cover" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3101040/library_600x900_2x.jpg" alt="Magical Girl Witch Trials cover"><span class="game-number">04</span><span class="media-score">8.8</span></a>
+            <div class="game-details"><div class="game-title-row"><div><p class="game-type">VISUAL NOVEL / MYSTERY</p><h2>Magical Girl Witch Trials</h2></div><span class="game-score">8.8</span></div><p class="game-description">Bright transformations meet dark verdicts in a mystery where every promise, spell, and smile may be evidence.</p><div class="game-tags"><span>mystery</span><span>visual novel</span><span>witchy</span></div><a href="https://store.steampowered.com/app/3101040/Magical_Girl_Witch_Trials/" target="_blank" rel="noreferrer">view on steam <i class="bi bi-arrow-up-right"></i></a></div>
+          </article>
+          <article class="library-card reveal">
+            <a class="game-media fatal-frame-media" href="game-detail.html?game=fatal-frame-2"><img class="game-cover" src="assets/fatal.jpg" alt="Fatal Frame II Crimson Butterfly REMAKE cover"><span class="game-number">07</span><span class="media-score">9.4</span></a>
+              <div class="game-details"><div class="game-title-row"><div><p class="game-type">SURVIVAL HORROR / REMAKE</p><h2>Fatal Frame II: Crimson Butterfly REMAKE</h2></div><span class="game-score">9.4</span></div><p class="game-description">Twin sisters, a forgotten village, and a camera that reveals what the living world refuses to show.</p><div class="game-tags"><span>ghost story</span><span>japanese horror</span><span>exploration</span></div><a href="https://store.steampowered.com/app/3920610/FATAL_FRAME_II_Crimson_Butterfly_REMAKE/" target="_blank" rel="noreferrer">view on steam <i class="bi bi-arrow-up-right"></i></a></div>
+          </article>
+          <article class="library-card reveal">
+            <a class="game-media nier-media" href="game-detail.html?game=nier-replicant"><img class="game-cover" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1113560/library_600x900_2x.jpg" alt="Nier Replicant cover"><span class="game-number">05</span><span class="media-score">9.5</span></a>
+            <div class="game-details"><div class="game-title-row"><div><p class="game-type">ACTION RPG / EXISTENTIAL</p><h2>Nier Replicant</h2></div><span class="game-score">9.5</span></div><p class="game-description">A beautiful, aching journey about names, bodies, memory, and the impossible lengths we go to for someone we love.</p><div class="game-tags"><span>emotional</span><span>action</span><span>music</span></div><a href="https://store.steampowered.com/app/1113560/NieR_Replicant_ver122474487139/" target="_blank" rel="noreferrer">view on steam <i class="bi bi-arrow-up-right"></i></a></div>
+          </article>
+          <article class="library-card reveal reveal-delay-1">
+            <a class="game-media colossus-media" href="game-detail.html?game=shadow-of-the-colossus"><img class="game-cover" src="https://image.api.playstation.com/vulcan/img/rnd/202010/2621/Nn4IUORGlwf1p6NSbBqINU8j.png?w=940&thumb=false" alt="Shadow of the Colossus PlayStation cover"><span class="game-number">06</span><span class="media-score">9.6</span></a>
+            <div class="game-details"><div class="game-title-row"><div><p class="game-type">ADVENTURE / COLOSSAL</p><h2>Shadow of the Colossus</h2></div><span class="game-score">9.6</span></div><p class="game-description">An empty kingdom, a forbidden wish, and sixteen impossible silhouettes waiting at the edge of the world.</p><div class="game-tags"><span>exploration</span><span>minimal</span><span>mythic</span></div><a href="https://www.playstation.com/en-us/games/shadow-of-the-colossus/" target="_blank" rel="noreferrer">visit playstation <i class="bi bi-arrow-up-right"></i></a></div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer"><div class="container d-flex justify-content-between"><span>© <span id="year"></span> GrffnL</span><span>built from good stories <i class="bi bi-stars"></i></span><a href="#top" aria-label="Back to top"><i class="bi bi-arrow-up"></i></a></div></footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="home.js"></script>
+  <script src="game-audio.js"></script>
+  <script>
+    document.querySelectorAll('.game-details h2').forEach((title, index) => {
+      const keys = ['persona-3-reload', 'arknights', 'silent-hill-2-remake', 'magical-girl-witch-trials', 'fatal-frame-2', 'nier-replicant', 'shadow-of-the-colossus'];
+      const link = document.createElement('a');
+      link.href = `game-detail.html?game=${keys[index]}`;
+      link.textContent = title.textContent;
+      title.replaceChildren(link);
+    });
+  </script>
+</body>
+</html>
