@@ -15,6 +15,21 @@ document.querySelectorAll('.nav-link').forEach((link) => link.addEventListener('
   if (menu.classList.contains('show')) bootstrap.Collapse.getOrCreateInstance(menu).hide();
 }));
 
+document.querySelectorAll('video[autoplay]').forEach((video) => {
+  video.muted = true;
+  video.defaultMuted = true;
+  video.playsInline = true;
+
+  const startVideo = () => {
+    if (!video.paused) return;
+    video.play().catch(() => {});
+  };
+
+  video.addEventListener('loadedmetadata', startVideo, { once: true });
+  video.addEventListener('canplay', startVideo, { once: true });
+  startVideo();
+});
+
 const homeAudio = document.querySelector('#homeAudio');
 const audioToggle = document.querySelector('#audioToggle');
 if (homeAudio && audioToggle) {
